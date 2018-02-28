@@ -9,7 +9,7 @@ Vue.use(Vuex)
 
 // 状态对象
 const state = {
- count: 0
+  count: 0
 }
 
 // 包含多个更新state函数的对象
@@ -33,8 +33,8 @@ const actions = {
     commit('DECREMENT')
   },
   // 带条件的action
-  incrementIfOdd ({commit}){
-    if(state.count%2===1){
+  incrementIfOdd ({commit}) {
+    if (state.count % 2 === 1) {
       commit('INCREMENT')
     }
   },
@@ -48,8 +48,8 @@ const actions = {
 
 // 包含多个getter计属性的函数
 const getters = {
-  evenOrOdd(state){
-    return state.count%2 === 0 ? '偶数' : '奇数'
+  evenOrOdd (state) {
+    return state.count % 2 === 0 ? '偶数' : '奇数'
   }
 }
 

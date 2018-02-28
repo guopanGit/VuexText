@@ -5,7 +5,10 @@ import store from './store'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  components: { App },
+  /*
+  components: {App},
   template: '<App/>',
+  */
+  render: h => h(App),
   store
 })
